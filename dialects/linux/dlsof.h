@@ -50,11 +50,7 @@
 #include <unistd.h>
 #include <netinet/in.h>
 
-# if	defined(GLIBCV) || defined(__UCLIBC__)
 #include <netinet/tcp.h>
-# else	/* !defined(GLIBCV) && !defined(__UCLIBC__) */
-#include <linux/tcp.h>
-# endif	/* defined(GLIBCV) || defined(__UCLIBC__) */
 
 # if	!defined(HASNORPC_H)
 #include <rpc/rpc.h>
