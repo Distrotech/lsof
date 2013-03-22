@@ -2801,7 +2801,7 @@ return(0); }
     if test $LSOF_TMP1 -eq 1	# {
     then
       LSOF_CFGF="$LSOF_CFGF -DHASSELINUX"
-      LSOF_CFGL="$LSOF_CFGL -lselinux"
+      LSOF_CFGL="$LSOF_CFGL -lselinux -lpthread"
     fi	# }
     LSOF_DIALECT_DIR="linux"
     LSOF_CFGF="$LSOF_CFGF -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE"
